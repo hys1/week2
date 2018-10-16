@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/libs/flexible.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+</head>
+
+<body>
+    <div class="box">
+        <header class="header">
+            <div class="dw">
+                <i class="iconfont icon-bianji tz"></i>
+            </div>
+        </header>
+        <main class="main">
+            <ul>
+                <!-- <li>
+                    <h2>按时间段来开发聚少离多</h2>
+                    <p>氨基酸了肯德基开发了斯柯达阿斯顿发送到发是阿萨德发</p>
+                </li> -->
+            </ul>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script id="tpl" type="text/x-handlebars-template">
+        {{#each this}}
+        <li>
+            <h2>{{h2}}</h2>
+            <p>{{p}}</p>
+        </li>
+        {{/each}}
+    </script>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/main.js'], function() {
+            require(['index'])
+        })
+    </script>
+</body>
+
+</html>
